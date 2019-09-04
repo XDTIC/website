@@ -1,31 +1,43 @@
 <template>
-  <div class="root">
+  <div class="footer">
     <Row>
-      <Col span="6">
+      <Col span="2">
         &nbsp;
       </Col>
-      <Col span="12">
+      <Col span="20">
         <div class="ft-left">
           <img alt="gzh-qcode.png" src="../assets/gzh-qcode.png" width="120"/>
+          <p>扫一扫，了解俱乐部动态</p>
         </div>
         <div class="ft-right">
           <p>
             友情链接
           </p>
           <div class="link-a">
-            <a href="https://ur.tencent.com/" target="_blank" rel="noopener">
-              <img alt="ur-logo.png" src="../assets/ur-logo.png" width="145px"/>
+            <a href="https://ur.tencent.com" target="_blank" rel="noopener">
+              <img alt="ur-logo.png" src="../assets/ur-logo.png"/>
             </a>
-            <a href="https://weixiao.qq.com/" target="_blank" rel="noopener">
-              <img alt="weixiao-logo.png" src="../assets/weixiao-logo.png" width="145px"/>
+            <a href="https://weixiao.qq.com" target="_blank" rel="noopener">
+              <img alt="weixiao-logo.png" src="../assets/weixiao-logo.png"/>
+            </a>
+            <a href="https://www.xidian.edu.cn" target="_blank" rel="noopener">
+              <img alt="xd-logo.png" src="../assets/xd-logo.png"/>
             </a>
           </div>
         </div>
       </Col>
-      <Col span="6">
+      <Col span="2">
         &nbsp;
       </Col>
     </Row>
+    <div class="copyright">
+      Copyright © 2019 Tencent Innovation Club, Xidian University. All Rights Reserved.
+    </div>
+    <div class="introduce">
+      腾讯创新俱乐部的官网还在开发中，请访问
+      <a href="https://github.com/WhiteRobe/xdtic-web" target="_blank" rel="noopener">xdtic-web@Github</a>了解或加入开发 |
+      <router-link to="/about"> 关于页面开发者 </router-link>。
+    </div>
   </div>
 </template>
 
@@ -41,7 +53,7 @@
 </script>
 
 <style scoped>
-  .root {
+  .footer {
     background: #2a2f35;
     min-height: 200px;
   }
@@ -51,13 +63,19 @@
     width: 330px;
     padding: 0 15px;
   }
+  .ft-left p {
+    color: whitesmoke;
+  }
   .ft-right {
     display: inline-block;
     vertical-align: middle;
     border-left: 1px solid #646f7c;
-    width: 400px;
     min-height: 150px;
     margin: 20px;
+  }
+  .ft-right img{
+    max-width: 200px;
+    max-height: 80px;
   }
   .ft-right p{
     font-size: 1rem;
@@ -70,4 +88,16 @@
     display: inline-block;
     margin: 35px 10px;
   }
+  .copyright {
+    color: snow;;
+    text-align: center;
+    font-size: .9rem;
+    line-height: 1.5rem;
+  }
+  .introduce {
+     color: gray;
+     text-align: center;
+     font-size: .75rem;
+     line-height: 1.5rem;
+   }
 </style>

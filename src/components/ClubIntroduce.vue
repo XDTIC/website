@@ -1,16 +1,27 @@
 <template>
-  <div class="root">
+  <div class="club-introduce">
     <img alt="XDTIC logo" src="../assets/logo.png" style="margin-top: 60px">
     <h1>欢迎访问西电腾讯创新俱乐部</h1>
-    <div class="introduce-subline">
-      腾讯创新俱乐部的官网还在开发中，请访问
-      <a href="https://github.com/WhiteRobe/xdtic-web" target="_blank" rel="noopener">xdtic-web@Github</a>了解或加入开发。
+    <div class="data-list">
+      <div class="data-item" v-for="(d, index) in clubData" :key="index">
+        <div class="data-top">
+          <div class="data-num">
+            {{d.num}}
+          </div>
+          <div class="data-unit">
+            {{d.unit}}
+          </div>
+        </div>
+        <div class="data-bottom">
+          {{d.bottom}}
+        </div>
+      </div>
     </div>
     <Row>
-      <Col span="6">
+      <Col span="4">
         &nbsp;
       </Col>
-      <Col span="12">
+      <Col span="16">
         <h3>什么是腾讯创新俱乐部？</h3>
         <div class="text-block">
           为加强和促进腾讯与高校在科研技术、人才培养以及校园活动等方面的合作，腾讯已陆续在全国21所高校内建立了腾讯创新俱乐部。
@@ -18,32 +29,25 @@
           让学生在互联网技术学习和产品创新过程中，充分参与项目管理、产品设计、用户需求和体验、产品技术开发实现、产品运营和服务等实践活动，从而全面提升学生的专业能力和综合素质。
         </div>
         <h3>俱乐部活动瞬间</h3>
-        <Carousel autoplay loop autoplay-speed="3000" v-model="carouseValue" easing="ease">
+        <Carousel autoplay loop :autoplay-speed="5000" v-model="carouseValue" easing="ease">
           <CarouselItem>
-            <img alt="carouse_home_1.jpg" src="../assets/carouse_home_1.jpg" />
+            <img alt="carouse_home_1.jpg" src="../assets/carouse_home_1.jpg"/>
           </CarouselItem>
           <CarouselItem>
-            <img alt="carouse_home_2.jpg" src="../assets/carouse_home_2.jpg" />
+            <img alt="carouse_home_2.jpg" src="../assets/carouse_home_2.jpg"/>
           </CarouselItem>
           <CarouselItem>
-            <img alt="carouse_home_2.jpg" src="../assets/carouse_home_3.jpg" />
+            <img alt="carouse_home_3.jpg" src="../assets/carouse_home_3.jpg"/>
           </CarouselItem>
           <CarouselItem>
-            <img alt="carouse_home_3.jpg" src="../assets/carouse_home_4.jpg" />
+            <img alt="carouse_home_4.jpg" src="../assets/carouse_home_4.jpg"/>
           </CarouselItem>
         </Carousel>
-        <h3>加入俱乐部</h3>
-        <div class="text-block" style="text-align: center">
-          开发中........
-        </div>
       </Col>
-      <Col span="6">
+      <Col span="4">
         &nbsp;
       </Col>
     </Row>
-
-    <br/>
-    <br/>
   </div>
 </template>
 
@@ -51,18 +55,34 @@
   import {Row, Col, Carousel, CarouselItem} from 'iview'
 
   export default {
-    name: 'HelloWorld',
+    name: 'ClubIntroduce',
     props: {
       msg: String
     },
     data() {
       return {
-        carouseValue: 0,
-        carouseImgs: [
-          "carouse_home_1.jpg",
-          "carouse_home_2.jpeg",
-          "carouse_home_3.jpg",
-          "carouse_home_4.jpg"
+        carouseValue: 2,
+        clubData: [
+          {
+            'num': 4,
+            'unit': '个',
+            'bottom': '主要部门',
+          },
+          {
+            'num': '100+',
+            'unit': '名',
+            'bottom': '现任成员',
+          },
+          {
+            'num': '30+',
+            'unit': '项',
+            'bottom': '各类奖项',
+          },
+          {
+            'num': new Date().getFullYear() - 2007, // 2007 年建立
+            'unit': '年',
+            'bottom': '创建历史',
+          }
         ]
       }
     },
@@ -77,17 +97,7 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .root{
-    background-image:url('../assets/low-poly-bg.jpg');
-    background-repeat:no-repeat;
-    background-size:100% 100%;
-    background-attachment:fixed;
-  }
-
-  .introduce-subline {
-    text-align: center;
-    font-size: 1rem;
-    line-height: 2.35714286rem;
+  .club-introduce {
   }
 
   .text-block {
@@ -96,7 +106,7 @@
     line-height: 2.35714286rem;
   }
 
-  h1{
+  h1 {
     font-size: 1.68571429rem;
     margin: 40px 0 10px;
   }
@@ -108,5 +118,46 @@
 
   a {
     color: #00b0fb;
+  }
+
+  .data-list {
+    display: flex;
+    margin: 55px 150px;
+    justify-content: space-between;
+  }
+
+  .data-list .data-item {
+    text-align: center;
+  }
+
+  .data-list .data-item .data-top {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    min-width: 280px;
+  }
+
+  .data-list .data-item .data-top .data-num {
+    color: #3bace3;
+    font-weight: 700;
+    margin-right: 8px;
+    font-size: 4rem;
+  }
+
+  .data-list .data-item .data-top .data-unit {
+    padding-top: 3rem;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: rgba(0, 0, 0, .3);
+    width: inherit;
+  }
+
+  .data-list .data-item .data-bottom {
+    color: #414141;
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-top: 10px;
   }
 </style>

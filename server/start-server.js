@@ -52,14 +52,14 @@ app.keys = COOKIE_KEY_LIST;
   registerLogger(logger);
 
   // >>> test mysql/redis/SMTP connection >>>
-  await mysqlConnectTest()
-    .then(res => {
-      logger.info(res.message);
-    })
-    .catch((err) => {
-      logger.error(`Fail to connect to MySQL[Error]: ${err.message}`);
-      process.exit(2); // 如果连不上数据库直接终止进程
-    });
+  // await mysqlConnectTest()
+  //   .then(res => {
+  //     logger.info(res.message);
+  //   })
+  //   .catch((err) => {
+  //     logger.error(`Fail to connect to MySQL[Error]: ${err.message}`);
+  //     process.exit(2); // 如果连不上数据库直接终止进程
+  //   });
 
   await redisConnectTest()
     .then(res => { // If you do not want to use redis, comment out this line.
@@ -81,18 +81,18 @@ app.keys = COOKIE_KEY_LIST;
   // <<< test redis/mysql/SMTP connection <<<
 
   // >>> Get MySQL/Redis connection pool with default options >>>
-  await getMySQLPool()
-    .then((pool) => {
-      registerMySQLPool(pool);
-    });
+  // await getMySQLPool()
+  //   .then((pool) => {
+  //     registerMySQLPool(pool);
+  //   });
   await getRedisPool()
     .then((pool) => {
       registerRedisPool(pool)
     });
 
+  // await buildDBEnvironment('./server/dao/xdtic-web-database.sql').then(); // after register-pool, init mysql-database
   let redisSession = KOA_SESSION_CONFIGURE.store === true ? await createRedisSession() : KOA_SESSION_CONFIGURE.store;
   let ratelimitRedis = connectRedis(false, {db: 1});
-  await buildDBEnvironment('./server/dao/xdtic-web-database.sql').then(); // after register-pool, init mysql-database
   // <<< Get MySQL/Redis connection pool with default options <<<
 
   // >>> Prepare server environment >>>

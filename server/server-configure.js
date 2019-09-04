@@ -10,7 +10,7 @@ const {aesDecrypt, aesEncrypt} = require("./util/crypto-aes-tool.js");
 // >>> 服务器注册配置表 >>>
 const SERVER_CONFIG = {
   def: {
-    port: 8080, // Server port
+    port: 80, // Server port
     enableSLL: false, // Wanna to start a ssl http-server?
     sslOptions: { // Only required when $enableSLL is true
       key: null, // Your private-key URL
@@ -45,7 +45,7 @@ const SERVER_CONFIG = {
 const STATIC_DIRECTORY = '../dist'; // Where the production-spa is
 const SERVER_PRIVATE_KEY = "WhiteRobe/xdtic-web@Github"; // Server private key, also use as jwt-secret
 const SERVER_SALT = "WhiteRobe/xdtic-web@Github"; // Server salt
-const JWT_PROTECT_UNLESS = [/^\/[\w.]*$/, /^\/css/, /^\/js/, /^\/img/, /^\/static/, /^\/pages/, /^\/papi/]; // 非JWT控制目录
+const JWT_PROTECT_UNLESS = [/^\/[\w.]*$/, /^\/css/, /^\/js/, /^\/img/, /^\/fonts/, /^\/pages/, /^\/papi/]; // 非JWT控制目录
 const JWT_OPTIONS = {
   algorithm: "HS256",
   // audience: (ctx) => ctx.ip, // 这两个值不应在此处被设置
