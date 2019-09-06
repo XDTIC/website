@@ -3,7 +3,8 @@
     <!-- <div class="backBtn">
       <router-link to="/" style="color: white">返回首页</router-link>
     </div> -->
-    <Row style="width: 75%;margin:auto">
+    <div>&nbsp;</div>
+    <Row style="width: 75%;margin:8vh auto auto">
       <Col span="16">
         <Card style="width:320px" v-for="(d, index) in developer" :key="index">
           <div style="text-align:center;opacity:0.9">
@@ -20,10 +21,10 @@
 <script>
   import {Row, Col, Card} from 'iview';
   import whiterobeAvatar from '../assets/whiterobe-avatar.png';
-  import Header from '@/components/headbar.vue'
+  import Header from '@/components/headbar.vue';
 
   export default {
-    name: 'Home',
+    name: 'About',
     data() {
       return {
         developer: [
@@ -40,19 +41,17 @@
     components: {
       Row,
       Col,
-      Card,
-      Header
+      Card
     }
   }
 </script>
 
 <style scoped>
   .about {
-    /* background-image: url('../assets/Star-Emission0.png'); */
+    background-image: url('../assets/low-poly-bg.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
-    /* height: 960px; */
     min-height: 100vh;
     text-align: center;
   }
