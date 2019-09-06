@@ -1,12 +1,9 @@
 <template>
   <div class="about">
-    <div class="backBtn">
+    <!-- <div class="backBtn">
       <router-link to="/" style="color: white">返回首页</router-link>
-    </div>
-    <Row style="padding-top: 60px">
-      <Col span="4">
-        &nbsp;
-      </Col>
+    </div> -->
+    <Row style="width: 75%;margin:auto">
       <Col span="16">
         <Card style="width:320px" v-for="(d, index) in developer" :key="index">
           <div style="text-align:center;opacity:0.9">
@@ -17,15 +14,13 @@
           </div>
         </Card>
       </Col>
-      <Col span="4">
-        &nbsp;
-      </Col>
     </Row>
   </div>
 </template>
 <script>
   import {Row, Col, Card} from 'iview';
   import whiterobeAvatar from '../assets/whiterobe-avatar.png';
+  import Header from '@/components/headbar.vue'
 
   export default {
     name: 'Home',
@@ -45,18 +40,20 @@
     components: {
       Row,
       Col,
-      Card
+      Card,
+      Header
     }
   }
 </script>
 
 <style scoped>
   .about {
-    background-image: url('../assets/Star-Emission0.png');
+    /* background-image: url('../assets/Star-Emission0.png'); */
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
-    height: 960px;
+    /* height: 960px; */
+    min-height: 100vh;
     text-align: center;
   }
 

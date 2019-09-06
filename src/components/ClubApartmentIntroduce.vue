@@ -51,7 +51,7 @@
     components: {
       Row,
       Col,
-      Icon
+      Icon,
     }
   }
 </script>
