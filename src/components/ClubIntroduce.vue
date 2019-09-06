@@ -52,7 +52,8 @@
 </template>
 
 <script>
-  import {Row, Col, Carousel, CarouselItem} from 'iview'
+  import {Row, Col, Carousel, CarouselItem} from 'iview';
+  import Header from '@/components/headbar.vue';
 
   export default {
     name: 'ClubIntroduce',
@@ -90,16 +91,14 @@
       Row,
       Col,
       Carousel,
-      CarouselItem
+      CarouselItem,
+      Header
     }
   }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .club-introduce {
-  }
-
   .text-block {
     font-size: 1.28571429rem;
     text-align: center;
