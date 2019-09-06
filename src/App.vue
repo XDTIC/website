@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Header from '@/components/headbar.vue';
+import Header from '@/components/headbar.vue'
 export default {
   components: {
     Header
@@ -20,7 +20,6 @@ export default {
 
 <style>
   #app {
-    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

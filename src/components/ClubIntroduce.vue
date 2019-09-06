@@ -1,5 +1,6 @@
 <template>
   <div class="club-introduce">
+    <div>&nbsp;<!--trick--></div>
     <img alt="XDTIC logo" src="../assets/logo.png" style="margin-top: 60px">
     <h1>欢迎访问西电腾讯创新俱乐部</h1>
     <div class="data-list">
@@ -53,7 +54,6 @@
 
 <script>
   import {Row, Col, Carousel, CarouselItem} from 'iview';
-  import Header from '@/components/headbar.vue';
 
   export default {
     name: 'ClubIntroduce',
@@ -91,8 +91,7 @@
       Row,
       Col,
       Carousel,
-      CarouselItem,
-      Header
+      CarouselItem
     }
   }
 </script>
