@@ -1,7 +1,7 @@
 <template>
   <div class="club-introduce">
     <div>&nbsp;<!--trick--></div>
-    <img alt="XDTIC logo" src="../assets/logo.png" style="margin-top: 60px">
+    <img alt="XDTIC logo" src="../assets/logo.png" style="margin-top: 100px">
     <h1>欢迎访问西电腾讯创新俱乐部</h1>
     <div class="data-list">
       <div class="data-item" v-for="(d, index) in clubData" :key="index">
@@ -82,7 +82,7 @@
           {
             'num': new Date().getFullYear() - 2007, // 2007 年建立
             'unit': '年',
-            'bottom': '创建历史',
+            'bottom': '创立历史',
           }
         ]
       }

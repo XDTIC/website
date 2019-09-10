@@ -4,7 +4,7 @@
       <router-link to="/" style="color: white">返回首页</router-link>
     </div> -->
     <div>&nbsp;</div>
-    <Row style="width: 75%;margin:8vh auto auto">
+    <Row style="width: 75%;margin:100px auto auto">
       <Col span="16">
         <Card style="width:320px" v-for="(d, index) in developer" :key="index">
           <div style="text-align:center;opacity:0.9">
@@ -21,7 +21,6 @@
 <script>
   import {Row, Col, Card} from 'iview';
   import whiterobeAvatar from '../assets/whiterobe-avatar.png';
-  import Header from '@/components/headbar.vue';
 
   export default {
     name: 'About',

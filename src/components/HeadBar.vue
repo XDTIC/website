@@ -1,16 +1,20 @@
 <template>
     <header v-if="show">
-      <nav id="headbar">
+      <nav class="head-bar">
         <div class="head-container">
           <div class="head-brand">
-          <h1 style="margin:0">TC Club</h1>
+          <h1 style="margin:0;color: black;">
+            <router-link to="/">
+              XDTIC主页
+            </router-link>
+          </h1>
           </div>
           <div class="head-links">
-            <router-link to="/">
-              HOME
+            <router-link to="/TStar">
+              T-Star挑战赛
             </router-link>
-            <router-link to="/about">
-              ABOUT
+            <router-link to="/WXYun">
+              云开发竞技赛
             </router-link>
           </div>
         </div>
@@ -18,7 +22,7 @@
     </header>
 </template>
 
-<<script>
+<script>
 export default {
   data(){
     return {
@@ -30,12 +34,8 @@ export default {
   },
   methods: {
     scrollToTop() { // 监听滚动条，动态隐藏标题栏
-      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-      if(scrollTop > 100){
-        this.show = false;
-      } else {
-        this.show = true;
-      }
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      this.show = scrollTop <= 100
     }
   },
 }
@@ -44,11 +44,12 @@ export default {
 <style scoped>
 header{
   position: fixed;
-  background: rgba(245, 245, 245, 0.3);
+  background: rgba(59, 172, 227, 0.1);
   width: 100%;
+  z-index: 999;
 }
-#headbar {
-  height: 8vh;
+.head-bar {
+  height: 75px;
 }
 .head-container {
   height: 100%;
