@@ -14,11 +14,15 @@
 
       <h2>腾讯云开发线下工坊竞技赛</h2>
       <img src="../assets/tstar/divider.png" alt="title"/><br/>
+      <img src="../assets/wxyun/3.png" width="400px" alt="board"/><br/>
       <p>作为腾讯犀牛鸟云开发人才培养计划的重要环节之一，腾讯犀牛鸟云开发线下工坊挑战赛通过腾讯优质线上云开发教学资源及完善培训机制、线下小程序云开发工坊活动、项目实战竞技赛，帮助同学们在快速掌握云开发和小程序开发技能的同时，提升活动策划与活动运营能力，挖掘优秀校园技术与运营人才。</p>
+
 
       <h2>竞技赛的对象是？</h2>
       <img src="../assets/tstar/divider.png" alt="title"/><br/>
+      <img src="../assets/wxyun/gongkai.png" width="400px" alt="gongkai"/><br/>
       <p>腾讯创新俱乐部及俱乐部周边高校，专业、年级不限，欢迎对云开发、小程序开发及其策划运营感兴趣，或今后有意向从事相关领域工作的同学报名。</p>
+      <p>腾讯创新俱乐部联合腾讯云【云开发TCB】共同举办【校园技术工坊】，面向腾讯创新俱乐部所在的所有高校。我们将基于强大的腾讯云开发平台，输出系统、专业的培训课程【四次线上+线下培训课程】让你轻松get小程序开发新“姿势”，让你的奇思妙想不再无枝可依！</p>
 
       <h2>学生项目的参与方式是？</h2>
       <img src="../assets/tstar/divider.png" alt="title"/><br/>
@@ -30,20 +34,21 @@
 
       <h2>腾讯云开发达人计划</h2>
       <img src="../assets/tstar/divider.png" alt="title"/><br/>
-      <img src="../assets/wxyun/yunkaifa-title.jpg" width="500px"/><br/>
+      <img src="../assets/wxyun/yunkaifa-title.jpg" width="500px" alt="board"/><br/>
       <p>腾讯【云开发达人】计划，是面向大学生的移动开发技术实战项目。计划包括校园技术工坊、线下百人公开课和竞技赛三大部分，围绕小程序开发、H5开发等展开。通过活动，大家将掌握腾讯云【云开发TCB】的开发实战能力，通过云开发TCB完成小程序、H5等产品开发，提升未来求职就业竞争力。</p>
 
 
       <h2>作品奖励机制(暂定)</h2>
       <img src="../assets/tstar/divider.png" alt="title"/><br/>
-      <img src="../assets/wxyun/1.jpg"/><br/>
+      <img src="../assets/wxyun/1.jpg" alt="jiangli"/><br/>
 
       <h2>赛事流程表</h2>
       <img src="../assets/tstar/divider.png" alt="title"/><br/>
-      <img src="../assets/wxyun/2.jpg"/><br/>
+      <img src="../assets/wxyun/2.jpg" alt="liucheng"/><br/>
 
       <h2>除了比赛，还有什么？</h2>
       <img src="../assets/tstar/divider.png" alt="title"/><br/>
+      <img src="../assets/wxyun/more.png" width="960px" alt="board"/><br/>
       <p>【竞技赛】主题以校园场景为基础，发现校园场景下的问题或实际需求，包括但不限于：选课、饭卡充值、分数查询、班级管理等，围绕微信小程序设计创新解决方案，并通过云开发完成Demo的搭建，实现程序的主要功能。除此之外，你还将获得：</p>
       <ul style="text-align: left; font-size: 1.3rem; margin: 20px 2em">
         <li>腾讯云一线业务大咖讲解答疑</li>
@@ -60,7 +65,7 @@
       <img src="../assets/tstar/divider.png" alt="title"/><br/>
 
       <p>本次竞技赛将于<b>11月初</b>开始，请关注XDTIC的公众号或本网站以获取最新资讯。我们会在赛事开始<u>前的一个月</u>开放报名入口和技术交流群。
-      也可以<a href="https://mp.weixin.qq.com/s/oxsL3t8EuT9wCZ5Thmv4DQ" target="_blank" rel="noopener">了解往年赛事概况</a>，充分了解腾讯云举办的本次比赛。 </p>
+      也可以<a href="https://mp.weixin.qq.com/s/oxsL3t8EuT9wCZ5Thmv4DQ" target="_blank" rel="noopener">回顾往年赛事概况</a>，充分了解腾讯云举办的本次比赛。 </p>
       <p>此外，<b style="color: #2b85e4">西电腾讯创新俱乐部</b>在往年的“云开发竞技赛”及“全国高校小程序开发赛”中，<b>取得了含一等奖在内的所有奖项</b>，具有充实的赛事经验，欢迎同学们在报名后加入技术交流群(下图右)。
       <b>搞比赛，我们是专业的！</b></p>
       <img src="../assets/gzh-qcode.png" alt="gzh" width="200px" style="margin-right: 50px"/>
