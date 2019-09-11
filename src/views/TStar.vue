@@ -23,16 +23,16 @@
         <b>主办方</b>：腾讯安全应急响应中心、腾讯高校合作中心<br/>
         <b>大赛时间</b>：<br/>
 
-        <span style="margin-left: 2em;text-align: left;font-size: 1.5rem; display: block">
+        <span style="margin-left: 2em;text-align: left;font-size: 1.3rem; display: block">
           报名时间：2019年9月9日-2019年11月30日
         </span>
-        <span style="margin-left: 2em;text-align: left;font-size: 1.5rem; display: block">
+        <span style="margin-left: 2em;text-align: left;font-size: 1.3rem; display: block">
           比赛时间：2019年10月14日-2019年11月30日<br/>
         </span>
-        <span style="margin-left: 2em;text-align: left;font-size: 1.5rem; display: block">
+        <span style="margin-left: 2em;text-align: left;font-size: 1.3rem; display: block">
           成绩公布：2019年12月中旬
         </span>
-        <span style="margin-left: 2em;text-align: left;font-size: 1.5rem; display: block">
+        <span style="margin-left: 2em;text-align: left;font-size: 1.3rem; display: block">
           颁奖典礼：2019年12月底，TSRC年终盛典
         </span>
 
@@ -73,18 +73,16 @@
       <h1>T-Star报名资格及方式</h1>
       <img src="../assets/tstar/divider.png" alt="title"/><br/>
       <p>
-        参赛资格：全日制在读大学生，专业年级不限
-
-        报名方式：
-
-        1.针对已有腾讯创新俱乐部的高校学生：
-
-        可直接联系本校腾讯创新俱乐部报名，经俱乐部确认身份后可参赛
-
-        2.针对本校暂无腾讯创新俱乐部的高校学生：
-
-        欢迎感兴趣的同学主动联系工作人员，报名成为本校团队负责人，负责筹建团队（有机会获得高校白帽专属帮扶基金）
+        <b>参赛资格</b>：全日制在读大学生，专业年级不限
       </p>
+      <p>
+        <b>报名方式</b>：<br/>
+        <span style="margin-left: 2em;text-align: left;font-size: 1.3rem; display: block">
+          1.针对已有腾讯创新俱乐部的高校学生：可直接联系本校腾讯创新俱乐部报名，经俱乐部确认身份后可参赛<span style="color: red">(西电已有腾讯创新俱乐部)</span>
+        </span>
+        <span style="margin-left: 2em;text-align: left;font-size: 1.3rem; display: block">
+          2.针对本校暂无腾讯创新俱乐部的高校学生：欢迎感兴趣的同学主动联系工作人员，报名成为<u>本校团队负责人</u>，负责筹建团队（有机会获得高校白帽专属帮扶基金）
+        </span>
       <p>团队负责人要求如下：</p>
       <img src="../assets/tstar/4.jpg" alt="title"/>
       <br/>
@@ -118,9 +116,15 @@
       <h1>报名方式</h1>
       <img src="../assets/tstar/divider.png" alt="title"/><br/>
       <!--<img src="../assets/tstar/TStat-1024x1024.png" alt="title" width="200px"/>-->
+      <p style="text-align: center">请扫描下方二维码报名或通过<a href="https://wj.qq.com/s2/4492770/946e" target="_blank" rel="noopener">在线渠道</a>进行报名</p>
       <img src="../assets/tstar/Tstart-heng.png" alt="title" height="200px"/>
       <br/>
       <i>仅限西电本校学生报名</i>
+
+      <h1>赛事交流群</h1>
+      <img src="../assets/tstar/divider.png" alt="title"/><br/>
+      <p style="text-align: center">请报名后的同学加入本校赛事微信交流群以获得后续通知</p>
+      <img src="../assets/tstar/wx-group.png" alt="title" width="250px"/>
 
       <br v-for="i in 2" :key="i"/>
     </article>
@@ -167,7 +171,7 @@
 
   article p {
     margin: 10px 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: left;
     text-indent: 2em;
   }

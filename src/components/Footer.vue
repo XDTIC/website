@@ -36,7 +36,15 @@
     <div class="introduce">
       腾讯创新俱乐部的官网还在开发中，请访问
       <a href="https://github.com/WhiteRobe/xdtic-web" target="_blank" rel="noopener">xdtic-web@Github</a>了解或加入开发 |
-      <router-link to="/about"> 关于页面开发者 </router-link>。
+      <router-link to="/about"> 关于页面开发者 </router-link>
+    </div>
+    <div class="introduce" style="color: lightblue; opacity: 0.6;">
+      <span id="busuanzi_container_site_pv" style="display: none">
+          总访问量<span id="busuanzi_value_site_pv"></span>次 |
+      </span>
+      <span>
+        本站已运行:{{Math.floor((new Date()-new Date('2019-09-01')) / 1000 / 3600 / 24)}}天
+      </span>
     </div>
   </div>
 </template>

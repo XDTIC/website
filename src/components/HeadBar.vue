@@ -11,10 +11,10 @@
         </div>
         <div class="head-links">
           <router-link to="/TStar">
-            <div  class="btn animated infinite tada slower delay-3s">T-Star挑战赛</div >
+            <div  class="btn animated infinite tada slower delay-2s">T-Star挑战赛</div >
           </router-link>
           <router-link to="/WXYun">
-            <div  class="btn animated infinite tada slower delay-3s">云开发竞技赛</div >
+            <div  class="btn animated infinite tada slower delay-2s">云开发竞技赛</div >
           </router-link>
         </div>
       </div>
