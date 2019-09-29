@@ -20,8 +20,8 @@
 
       <h2>竞技赛的对象是？</h2>
       <img src="../assets/tstar/divider.png" alt="title"/><br/>
-      <img src="../assets/wxyun/gongkai.png" width="400px" alt="gongkai"/><br/>
       <p>腾讯创新俱乐部及俱乐部周边高校，专业、年级不限，欢迎对云开发、小程序开发及其策划运营感兴趣，或今后有意向从事相关领域工作的同学报名。</p>
+      <img src="../assets/wxyun/gongkai.png" width="400px" alt="gongkai"/><br/>
       <p>腾讯创新俱乐部联合腾讯云【云开发TCB】共同举办【校园技术工坊】，面向腾讯创新俱乐部所在的所有高校。我们将基于强大的腾讯云开发平台，输出系统、专业的培训课程【四次线上+线下培训课程】让你轻松get小程序开发新“姿势”，让你的奇思妙想不再无枝可依！</p>
 
       <h2>学生项目的参与方式是？</h2>
