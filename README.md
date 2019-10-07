@@ -5,8 +5,8 @@
 
 <p align="center">
 	<a href="https://github.com/WhiteRobe/xdtic-web/blob/master/LICENSE"><img src="https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000"/></a>
-	<img src="https://img.shields.io/github/repo-size/WhiteRobe/xdtic-web.svg"/>
-	<img src="https://img.shields.io/github/last-commit/WhiteRobe/xdtic-web.svg"/>
+	<img src="https://img.shields.io/github/repo-size/XDTIC/website.svg"/>
+	<img src="https://img.shields.io/github/last-commit/XDTIC/website.svg"/>
 	<a href="http://hits.dwyl.io/WhiteRobe/xdtic-web"><img src="http://hits.dwyl.io/WhiteRobe/xdtic-web.svg"/></a>
 </p>
 <p align="center">
