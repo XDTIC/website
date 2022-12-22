@@ -14,7 +14,7 @@
     "generic-pool": "^3.7.1",
     "ioredis": "^4.14.0",
     "iview": "^3.5.0-rc.1",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "koa": "^2.8.1",
     "koa-body": "^4.1.1",
     "koa-compress": "^3.0.0",
